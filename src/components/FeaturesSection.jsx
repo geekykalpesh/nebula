@@ -4,38 +4,38 @@ import { Video, User, RefreshCw, Scissors, Sun, Palette, Smartphone } from "luci
 const features = [
   {
     icon: <Video className="w-6 h-6 text-blue-400" />,
-    title: "Generate cinematic visuals from ideas",
-    desc: "Transform scripts, concepts, and references into high-quality video scenes",
+    title: "Instant cinematic visualization",
+    desc: "Turn scripts and concepts into high-fidelity video scenes in minutes, not days.",
   },
   {
     icon: <User className="w-6 h-6 text-purple-400" />,
-    title: "Precision character movement & performance",
-    desc: "Direct on-screen characters with controlled motion, gestures, and timing",
+    title: "Director-level control",
+    desc: "Direct every gesture, expression, and movement with precision usually reserved for live action.",
   },
   {
     icon: <RefreshCw className="w-6 h-6 text-emerald-400" />,
-    title: "Visual continuity across frames",
-    desc: "Maintain consistent characters, environments, and visual styles across multiple shots",
+    title: "Perfect visual continuity",
+    desc: "Keep characters and environments consistent across every shot of your campaign.",
   },
   {
     icon: <Scissors className="w-6 h-6 text-pink-400" />,
-    title: "Intelligent cuts, pacing, and flow",
-    desc: "AI-assisted editing enables faster sequencing, smoother transitions, and platform-optimised pacing without sacrificing cinematic quality",
+    title: "AI-assisted pacing",
+    desc: "Find the perfect rhythm for your edit automatically, optimized for maximum retention.",
   },
   {
     icon: <Sun className="w-6 h-6 text-amber-400" />,
-    title: "Cinematic lighting without reshoots",
-    desc: "Adjust lighting, mood, and colour dynamically in post",
+    title: "Post-production magic",
+    desc: "Change the time of day, lighting, or mood of any scene without a reshoot.",
   },
   {
     icon: <Palette className="w-6 h-6 text-cyan-400" />,
-    title: "Control the look and feel",
-    desc: "Apply and iterate across multiple visual styles",
+    title: "Infinite style exploration",
+    desc: "Test five different visual styles for your brand before committing to one.",
   },
   {
     icon: <Smartphone className="w-6 h-6 text-indigo-400" />,
-    title: "Built for every platform",
-    desc: "Generate outputs optimised for Reels, Shorts, TikTok, and YouTube",
+    title: "Native to every platform",
+    desc: "Automatically reframe and optimize your master cut for Reels, TikTok, and YouTube Shorts.",
   },
 ];
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative border-t border-white/10 bg-white/5 backdrop-blur-md pt-20 pb-10 overflow-hidden">
+    <footer className="relative z-20 border-t border-white/10 bg-transparent pt-20 pb-10 overflow-hidden">
       {/* Inline Animations */}
       <style>{`
         @keyframes fadeUp {
@@ -56,7 +56,6 @@ const Footer = () => {
           {/* Brand */}
           <div className="fade-up">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-400 pulse-soft"></div>
               <span className="font-semibold text-white tracking-tight">
                 Nebula Films
               </span>

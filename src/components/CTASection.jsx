@@ -8,15 +8,15 @@ const CTASection = () => {
         <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-400/20 to-transparent"></div>
 
         <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6 tracking-tight leading-tight">
-          Ready to build films that <br /> actually engage?
+          Stop making ads they skip. <br /> Start telling stories they share.
         </h2>
 
         <p className="text-slate-300 text-lg max-w-xl mx-auto mb-10">
-          If you're a brand that values storytelling, consistency, and future-forward production.
+          Join the forward-thinking brands using Nebula to produce cinematic, high-converting films at the speed of culture.
         </p>
 
         <button className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-white text-blue-900 hover:bg-blue-50 transition-colors shadow-lg shadow-white/10 font-medium text-sm">
-          Hire Nebula Films
+          Start Your Project
         </button>
       </div>
     </section>

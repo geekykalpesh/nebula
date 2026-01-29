@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import FeatureCards from "./components/FeatureCards";
 
-import ProcessSection from "./components/ProcessSection";
-import BentoGrid from "./components/BentoGrid";
-import CTASection from "./components/CTASection";
-import Footer from "./components/Footer";
-import FeaturesSection from "./components/FeaturesSection";
+const ReelsSection = lazy(() => import("./components/ReelsSection"));
+const FeaturesSection = lazy(() => import("./components/FeaturesSection"));
+const ProcessSection = lazy(() => import("./components/ProcessSection"));
+const BentoGrid = lazy(() => import("./components/BentoGrid"));
+const CTASection = lazy(() => import("./components/CTASection"));
+const Footer = lazy(() => import("./components/Footer"));
+const SparklesPreview = lazy(() => import("./components/SparklesPreview"));
+
+// Skeleton loader for sections
+const SectionLoader = () => (
+  <div className="w-full h-96 bg-white/5 animate-pulse rounded-3xl mx-auto max-w-7xl my-20"></div>
+);
 
 const App = () => {
   return (
@@ -15,13 +22,19 @@ const App = () => {
       <Header />
       <main>
         <HeroSection />
-        <FeatureCards />
-        <FeaturesSection />
-        <ProcessSection />
-        <BentoGrid />
-        <CTASection />
+        <Suspense fallback={<SectionLoader />}>
+          <ReelsSection />
+          <FeatureCards />
+          <FeaturesSection />
+          <ProcessSection />
+          <BentoGrid />
+          <CTASection />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+        <SparklesPreview />
+      </Suspense>
     </div>
   );
 };
