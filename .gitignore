@@ -28,6 +28,8 @@ dist-ssr
 
 # AI / Agentic coding tools
 .agent/
+.github/skills/
+skills/
 .agents/
 .claude/
 .cline/
